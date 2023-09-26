@@ -31,8 +31,8 @@ const TopicList = async () => {
           </div>
 
           <div className="flex gap-2 items-center">
-            <RemoveBtn />
-            <Link href={"/editTopic/{id}"} className=" text-blue-700">
+            <RemoveBtn id={t._id} />
+            <Link href={`/editTopic/${t._id}`} className=" text-blue-700">
               <AiFillEdit size={24} />
             </Link>
           </div>
